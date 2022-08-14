@@ -1,5 +1,5 @@
 <template>
-  <div class="contianer">
+  <div class="container">
     <common-header :title="title"></common-header>
     <detail-scroll-wrapper></detail-scroll-wrapper>
   </div>
