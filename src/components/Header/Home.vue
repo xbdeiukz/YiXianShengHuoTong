@@ -23,9 +23,11 @@ export default {
 @import '~styles/mixins.scss';
 
   .header {
+    position: fixed;
+    z-index: 3;
     @include flex-row;
+    width: 100%;
     height: $headerHeight;
     background-color: $defaultBgColor;
   }
-
 </style>
