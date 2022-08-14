@@ -91,7 +91,7 @@ export default {
     }
   },
   mounted() {
-    this.betterScroll = new BetterScroll(this.$refs.wrapper)
+    this.scroll = new BetterScroll(this.$refs.wrapper, { mouseWheel: true, click: true, tap: true })
     this.getListData(this.cityId, this.field)
   },
   watch: {

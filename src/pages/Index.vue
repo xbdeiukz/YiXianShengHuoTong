@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <home-header></home-header>
     <home-scroll-wrapper></home-scroll-wrapper>
   </div>

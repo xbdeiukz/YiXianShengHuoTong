@@ -135,7 +135,7 @@ export default {
     console.log('created------')
   },
   mounted() {
-    this.betterScroll = new BetterScroll(this.$refs.wrapper)
+    this.scroll = new BetterScroll(this.$refs.wrapper, { mouseWheel: true, click: true, tap: true })
     this.field = this.$route.query.field
     this.id = this.$route.query.id
     this.getDetailData(this.field, this.id)

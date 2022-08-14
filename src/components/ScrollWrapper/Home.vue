@@ -102,7 +102,7 @@ export default {
     },
   },
   mounted() {
-    this.betterScroll = new BetterScroll(this.$refs.wrapper)
+    this.scroll = new BetterScroll(this.$refs.wrapper, { mouseWheel: true, click: true, tap: true })
     this.getHomeData(this.cityId)
     this.currentCityId = this.cityId
   },
@@ -116,8 +116,4 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '~styles/variables.scss';
-.scroll-wrapper {
-  padding-top: $headerHeight;
-}
 </style>

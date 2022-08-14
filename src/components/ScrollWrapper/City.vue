@@ -15,7 +15,7 @@ import CityList from './CityList/Index'
 export default {
   name: 'CityScrollWrapper',
   mounted() {
-    this.scroll = new BetterScroll(this.$refs.wrapper)
+    this.scroll = new BetterScroll(this.$refs.wrapper, { mouseWheel: true, click: true, tap: true })
   },
   components: {
     CurrentCity,
